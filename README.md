@@ -15,13 +15,13 @@ To use this checkpoint, first download the [pretrained Senna](https://huggingfac
 Then, update the `mm_vision_tower` path in the `config.json` file of the Senna model folder to point to the downloaded [CLIP](https://huggingface.co/openai/clip-vit-large-patch14) model.
 
 ### Evaluation
-To evaluate on Phase 1, update the `ckpt` path in `eval.sh`, then run:
+To evaluate on the Phase 1 test set, update the `ckpt` path in `eval.sh`, then run:
 ```shell
 sh eval_tools/eval.sh
 ```
 
 ### Fine-tuning
-The data we use to fine-tune Senna can be found [here](https://drive.google.com/drive/folders/12QIqvhG5h2MgLx4RUJyRbps_c798Gpbx?usp=drive_link). To fine-tune, update the path in `robosense_FT.sh`, then run:
+The data we use for fine-tuning Senna in Phase 1 can be found [here](https://drive.google.com/drive/folders/12QIqvhG5h2MgLx4RUJyRbps_c798Gpbx?usp=drive_link). To fine-tune, update the path in `robosense_FT.sh`, then run:
 ```shell
 sh train_tools/robosense_FT.sh
 ```

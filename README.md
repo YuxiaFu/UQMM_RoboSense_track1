@@ -7,7 +7,7 @@ This repository is built on top of [Senna](https://github.com/hustvl/Senna). Ple
 We first download the raw test data from the competition page and convert it into the required format following the official instructions.
 After conversion, place the files into the `QA_data` folder.
 
-To further adapt the dataset into the format required by the **Senna** model, update the `dataset_root` path inside [here](data_tools/convert_fmt_from_track1_to_Senna.py) and then run the script.
+To further adapt the dataset into the format required by the **Senna** model, update the `dataset_root` path inside [`convert_fmt_from_track1_to_Senna.py`](data_tools/convert_fmt_from_track1_to_Senna.py) and then run the script.
 
 ### Weight
 

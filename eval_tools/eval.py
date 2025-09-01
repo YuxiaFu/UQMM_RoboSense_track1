@@ -5,7 +5,7 @@ from tqdm import tqdm
 from typing import Any, Dict, List, Literal
 from peft import PeftModel, PeftConfig
 
-from eval_tools.senna_qa_utils import eval_multi_img_model_wo_init
+from senna_qa_utils import eval_multi_img_model_wo_init
 from llava.model.builder import load_senna_pretrained_model
 
 DATE_TIME = time.strftime("%Y_%m_%d-%H_%M_%S")
@@ -91,7 +91,7 @@ def get_parser():
     import argparse
     parser = argparse.ArgumentParser(description='Senna Eval')
     parser.add_argument('ckpt', type=str, help='model path')
-    parser.add_argument('phase', type=str, help='phase, 1 or 2', choices=[1, 2])
+    parser.add_argument('phase', type=int, help='phase, 1 or 2', choices=[1, 2])
     args = parser.parse_args()
     print(f'eval model path: {os.path.abspath(args.ckpt)} on phase {args.phase}')
     return args

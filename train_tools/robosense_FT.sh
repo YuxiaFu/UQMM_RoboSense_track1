@@ -1,7 +1,7 @@
 MODEL_PATH="ckpt/path/to/senna/"
 CLIP_PATH="ckpt/path/to/clip/"
 DATA="QA_data/train_data.json"
-OUT_DIR="result/output_ckpt_folder_name"
+OUT_DIR="model_results/output_ckpt_folder_name"
 
 train_epochs=1
 

@@ -19,6 +19,7 @@ To evaluate on the Phase 1 test set, update the `ckpt` path in `eval.sh`, then r
 ```shell
 sh eval_tools/eval.sh
 ```
+The json files of final results on the leaderboard for phase 1 and phase 2 can be found [here]
 
 ### Fine-tuning
 The data we use for fine-tuning Senna in Phase 1 can be found [here](https://drive.google.com/drive/folders/12QIqvhG5h2MgLx4RUJyRbps_c798Gpbx?usp=drive_link). To fine-tune, update the path in `robosense_FT.sh`, then run:
